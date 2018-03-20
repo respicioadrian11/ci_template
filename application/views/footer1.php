@@ -15,6 +15,7 @@
 
     	<script type="text/javascript" src="<?= base_url('assets/js/tooltip.js') ?>"></script>
         <script type="text/javascript" src="<?= base_url('assets/js/users.js') ?>"></script>
+        <script type="text/javascript" src="<?= base_url('assets/js/post.js') ?>"></script>
 
 </footer>
 	</body>
