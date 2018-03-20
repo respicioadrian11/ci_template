@@ -10,9 +10,11 @@
     	<script type="text/javascript" src="<?= base_url('assets/dist/sweetalert.min.js') ?>"></script>
     	<script type="text/javascript" src="<?= base_url('assets/dist/sweetalert.js') ?>"></script>
         <script src="//cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+        
 
     	<script type="text/javascript" src="<?= base_url('assets/js/tooltip.js') ?>"></script>
+        <script type="text/javascript" src="<?= base_url('assets/js/users.js') ?>"></script>
 
 </footer>
 	</body>
-</html
+</html>

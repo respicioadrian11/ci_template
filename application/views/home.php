@@ -1,20 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="jumbotron jumbotron-danger text-center" style="background-color:#dc6900; color: #ffffff;">
-      <h1 style="font-family:serif;"><i class="fa fa-drupal"></i> CODEIGNITER</h1> 
-  <div class="dropdown" style="float:right; padding-right: 10px;">
-    <button class="btn btn-warning " type="button" data-toggle="dropdown"><i class="fa fa-bars"></i> MENU
-      <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-left" style="padding-right:15px; ">
-            <li><a class="icon-bar a" href="<?= base_url()?>"><i class="fa fa-home"></i> Home</a></li>
-            <li><a class="icon-bar a" href="#" data-toggle="modal" data-target="#myReg"><i class="fa fa-edit"></i> Sign Up</a></li>
-            <li><a class="icon-bar a" href="#" data-toggle="modal" data-target="#myLog"><i class= "fa fa-lock"></i> Login</a></li>
-            <li><a class="icon-bar a" href="about"><i class="fa fa-eye"></i> about</a></li>
-            <li><a class="icon-bar a" href="about/contact"><i class="fa fa-address-book"></i> Contact Us</a></li> 
-        </ul>
-  </div>
-</div>
-
+    
 
     <!----
     <div class="icon-bar">
