@@ -50,9 +50,7 @@ $(document).on('submit','#frmLogin',function(e){
       if(data.status==0){
 
       }else{
-       window.location.href="feed";
-       $('#username').val('');
-       $('#password').val('');
+       window.location.href="ind/enter";
       }
     }
   })

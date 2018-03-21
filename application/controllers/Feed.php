@@ -10,6 +10,7 @@
 			$post 	= $this->input->post("post");
 			$user 	= $this->session->userdata('username');
 			$image 	=$this->session->userdata('image');
+			$postID =$this->input->post('postID');
 
 			$return['message'] = "Oops something went wrong!";
 			$return['type']		 = "error";
@@ -28,5 +29,24 @@
 			}
 			echo json_encode($return);
 	}
+
+	public function del(){
+		$u=$this->uri->segment(3);
+		$this->load->model('feedModel');
+		$this->feedModel->del($u);
+		redirect('feed');
+	}
+
+	public function viewPost(){
+		$id = $this->uri->segment(3);
+		$data = null;
+		$this->load->model('feedModel');
+		$result = $this->feedModel->viewPost($id);
+		if ($result->num_rows() > 0) {
+			$data = $result->result_array();
+		}
+		echo json_encode($data);
+	}
+
 		
 }

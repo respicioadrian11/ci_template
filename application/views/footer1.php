@@ -1,6 +1,6 @@
 
 <footer>
-	
+	<button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-warning"><i class="fa fa-angle-up"></i></button>
 		<script type="text/javascript" src="<?= base_url('assets/js/jquery.js') ?>"></script>
     	<script type="text/javascript" src="<?= base_url('assets/bootstrap4/js/bootstrap.min.js') ?>"></script>
     	<script type="text/javascript" src="<?= base_url('assets/datatables/jquery.dataTables.min.js')?>"></script>

@@ -81,7 +81,7 @@
 		public function enter(){
 		if($this->session->userdata('username') != '')
 			{
-				redirect(base_url().'feed');	
+				redirect(base_url().'Ind');	
 		}else{
 			redirect('home');
 		}
@@ -90,6 +90,11 @@
 	function logout()
 	{
 		$this->session->unset_userdata('username');
+		$this->session->unset_userdata('name');
+		$this->session->unset_userdata('address');
+		$this->session->unset_userdata('birthday');
+		$this->session->unset_userdata('gender');
+		$this->session->unset_userdata('image');
 		redirect('home');
 	}
 }
