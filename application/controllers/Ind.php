@@ -81,7 +81,7 @@
 		public function enter(){
 		if($this->session->userdata('username') != '')
 			{
-				redirect(base_url().'Ind');	
+				redirect(base_url().'feed');	
 		}else{
 			redirect('home');
 		}

@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 <body>
-	<div class="jumbotron jumbotron-danger text-center" style="background-color:#dc6900; color: #ffffff;">
+	<div class="jumbotron jumbotron-danger text-center" style="background-color:#dc6900;">
       <h1 style="font-family:serif;"><i class="fa fa-drupal"></i> CODEIGNITER</h1> 
   <div class="dropdown" style="float:right; padding-right: 10px;">
     <button class="btn btn-warning " type="button" data-toggle="dropdown"><i class="fa fa-bars"></i> MENU

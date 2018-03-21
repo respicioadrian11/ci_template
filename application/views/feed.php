@@ -33,18 +33,17 @@
 			
 
 	<div class="row">
-		<hr>
+		<hr style="padding-top: 5px;">
 		<div class="col-sm-4">
 			<p style="font-weight: bolder;">By: <?= $row->user;?> @ <?= $row->datecreated;?></p>
 			<img src="assets/images/<?= $row->image;?>" width="100px" height="100px">
 		</div>
-		<div class="col-sm-3">
-			<a class="btn btn-primary" href="#view<?= $row->id;?>" data-toggle="modal"><i class="fa fa-eye"></i></a>
-			<a class="btn btn-danger" href="<?php echo site_url('feed/del/' .$row->id) ?>" onclick="return swal('Deleted','Successfully Deleted','success')"><i class="fa fa-trash"></i></a>
-			<a class="btn btn-success" href=""><i class="fa fa-edit"></i></a>
-		</div>
 		<div class="col-sm-5">
-			<p align="justify"><?=character_limiter($row->post, 100);?><p>
+			<p align="justify"><?=character_limiter($row->post, 100);?>
+			<a  href="#view<?= $row->id;?>" data-toggle="modal"><i class="fa fa-eye"></i></a>
+			<a  href="<?php echo site_url('feed/del/' .$row->id) ?>" onclick="return swal('Deleted','Successfully Deleted','success')"><i class="fa fa-trash"></i></a>
+			<a  href="#edit<?=$row->id;?>" data-toggle="modal"><i class="fa fa-edit"></i></a>
+			<p>
 		</div>
 	</div>
 
@@ -66,6 +65,32 @@
 		</div>
 	</div>
 </div>
+
+<div id="edit<?= $row->id; ?>" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title"> <?= $row->user;?></h4>
+			</div>
+			<div class="modal-body">
+				<p><img src="assets/images/<?= $row->image;?>" width="100px" height="100px"></p>
+				<strong><?=$row->datecreated;?></strong>
+				<form>
+			<div class="form-group">
+				<textarea name="postedit" id="postedit" class="form-control" rows="3" cols="4"><?=$row->post;?></textarea>
+			</div>
+			<div class="form-group">
+				<button class="btn btn-success" type="submit" id="btnSubmit">Save</button>
+			</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 	
 <?php endforeach;
 else:?>
